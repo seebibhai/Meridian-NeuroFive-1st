@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <rect width="900" height="480" fill="#121A26"/>
+  <!-- sidebar -->
+  <rect x="0" y="0" width="180" height="480" fill="#0E1420"/>
+  <rect x="24" y="28" width="90" height="14" rx="4" fill="#EEF1F6" opacity="0.9"/>
+  <rect x="24" y="80" width="132" height="10" rx="3" fill="#5B6EF5" opacity="0.9"/>
+  <rect x="24" y="112" width="110" height="10" rx="3" fill="#374158"/>
+  <rect x="24" y="144" width="120" height="10" rx="3" fill="#374158"/>
+  <rect x="24" y="176" width="96" height="10" rx="3" fill="#374158"/>
+  <rect x="24" y="208" width="116" height="10" rx="3" fill="#374158"/>
+
+  <!-- top bar -->
+  <rect x="204" y="24" width="220" height="16" rx="4" fill="#EEF1F6" opacity="0.85"/>
+  <circle cx="850" cy="32" r="12" fill="#FFB020"/>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="204" y="72" width="150" height="88" rx="10" fill="#1A2433" stroke="#253044"/>
+    <rect x="222" y="94" width="60" height="9" rx="3" fill="#9AA7BD"/>
+    <text x="222" y="130" font-family="monospace" font-size="22" fill="#35D399">99.98%</text>
+  </g>
+  <g>
+    <rect x="366" y="72" width="150" height="88" rx="10" fill="#1A2433" stroke="#253044"/>
+    <rect x="384" y="94" width="60" height="9" rx="3" fill="#9AA7BD"/>
+    <text x="384" y="130" font-family="monospace" font-size="22" fill="#FFB020">142ms</text>
+  </g>
+  <g>
+    <rect x="528" y="72" width="150" height="88" rx="10" fill="#1A2433" stroke="#253044"/>
+    <rect x="546" y="94" width="60" height="9" rx="3" fill="#9AA7BD"/>
+    <text x="546" y="130" font-family="monospace" font-size="22" fill="#5B6EF5">3.1M</text>
+  </g>
+  <g>
+    <rect x="690" y="72" width="150" height="88" rx="10" fill="#1A2433" stroke="#253044"/>
+    <rect x="708" y="94" width="60" height="9" rx="3" fill="#9AA7BD"/>
+    <text x="708" y="130" font-family="monospace" font-size="22" fill="#FF5C5C">0.02%</text>
+  </g>
+
+  <!-- chart panel -->
+  <rect x="204" y="180" width="472" height="220" rx="10" fill="#1A2433" stroke="#253044"/>
+  <polyline points="220,340 260,300 300,330 340,260 380,290 420,230 460,270 500,210 540,250 580,200 620,240 660,190"
+            fill="none" stroke="#5B6EF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="220,370 260,360 300,375 340,350 380,365 420,340 460,355 500,330 540,345 580,320 620,335 660,310"
+            fill="none" stroke="#FFB020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+  <!-- side status list -->
+  <rect x="694" y="180" width="146" height="220" rx="10" fill="#1A2433" stroke="#253044"/>
+  <circle cx="712" cy="204" r="4" fill="#35D399"/>
+  <rect x="724" y="200" width="90" height="8" rx="2" fill="#9AA7BD"/>
+  <circle cx="712" cy="230" r="4" fill="#35D399"/>
+  <rect x="724" y="226" width="70" height="8" rx="2" fill="#9AA7BD"/>
+  <circle cx="712" cy="256" r="4" fill="#FFB020"/>
+  <rect x="724" y="252" width="80" height="8" rx="2" fill="#9AA7BD"/>
+  <circle cx="712" cy="282" r="4" fill="#35D399"/>
+  <rect x="724" y="278" width="60" height="8" rx="2" fill="#9AA7BD"/>
+  <circle cx="712" cy="308" r="4" fill="#FF5C5C"/>
+  <rect x="724" y="304" width="94" height="8" rx="2" fill="#9AA7BD"/>
+</svg>

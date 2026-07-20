@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian — Real-time monitoring & alerting for engineering teams</title>
+  <meta name="description" content="Meridian tracks uptime, latency, and traces across every service in real time, so your team hears about incidents from a dashboard, not a support ticket." />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk (display), Inter (body), Space Mono (data/metrics) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS load order matters: reset first, then tokens, then components,
+       then utility helpers, then responsive overrides last -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- The entire page is rendered into this single mount point by app.js.
+       Keeping index.html minimal means the page structure lives in
+       version-controlled, reusable JS functions instead of static markup
+       that has to be hand-edited in multiple places when content changes. -->
+  <div id="app"></div>
+
+  <!-- data first, then shared component builders, then one file per
+       section, then app.js last since it calls everything above it -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

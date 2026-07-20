@@ -1,0 +1,98 @@
+/* ==========================================================================
+   UTILITIES.CSS
+   Small, single-purpose helper classes. Why they exist: instead of writing
+   ".hero-title { text-align:center }" and ".pricing-title { text-align:center }"
+   separately, both can share ".text-center". Keeps CSS DRY and predictable.
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--space-4xl);
+}
+
+.section-inner {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: rgba(255, 176, 32, 0.08);
+  border: 1px solid rgba(255, 176, 32, 0.25);
+  padding: var(--space-2xs) var(--space-md);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-lg);
+}
+
+.section-head {
+  max-width: 620px;
+  margin-inline: auto;
+  margin-bottom: var(--space-3xl);
+  text-align: center;
+}
+
+.section-head h2 {
+  margin-bottom: var(--space-md);
+}
+
+.section-head p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

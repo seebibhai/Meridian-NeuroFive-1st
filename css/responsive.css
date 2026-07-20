@@ -1,0 +1,97 @@
+/* ==========================================================================
+   RESPONSIVE.CSS
+   Loaded last so its rules win the cascade. Written mobile-up: base styles
+   in style.css already target small screens (single column, hamburger menu),
+   and each breakpoint here progressively adds the desktop layout back in.
+   Tested against: 320, 375, 425, 768, 1024, 1280, 1440.
+   ========================================================================== */
+
+/* ---- base / mobile (< 640px), applies from 320px up ---- */
+h1 { font-size: var(--fs-2xl); }
+
+.navbar-links,
+.navbar-actions .btn-ghost {
+  display: none;
+}
+
+.navbar-toggle { display: flex; }
+
+.hero-grid { grid-template-columns: 1fr; }
+.hero-visual { order: -1; }
+.hero-ctas { flex-direction: column; align-items: stretch; }
+.hero-ctas .btn { width: 100%; }
+
+.features-grid,
+.testimonials-track,
+.pricing-grid { grid-template-columns: 1fr; }
+
+.why-grid { grid-template-columns: 1fr; }
+.why-visual { order: -1; }
+
+.stats-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-2xl) var(--space-md); }
+
+.footer-top { grid-template-columns: 1fr; }
+
+.footer-bottom { flex-direction: column; gap: var(--space-lg); text-align: center; }
+
+.newsletter-form { flex-direction: column; }
+
+.trusted-logos { gap: var(--space-lg) var(--space-xl); }
+
+.section { padding-block: var(--space-3xl); }
+
+/* ---- small phones fine-tune (320–374px) ---- */
+@media (max-width: 374px) {
+  :root { --container-padding: 1rem; }
+  .hero-title { font-size: 1.9rem; }
+  .pulse-metrics { grid-template-columns: 1fr; gap: var(--space-sm); }
+}
+
+/* ---- large phones (425px+) ---- */
+@media (min-width: 425px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---- tablet (768px+) ---- */
+@media (min-width: 768px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-track { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(4, 1fr); }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  h1 { font-size: 3.2rem; }
+}
+
+/* ---- laptop (1024px+) ---- */
+@media (min-width: 1024px) {
+  .navbar-links { display: flex; }
+  .navbar-actions .btn-ghost { display: inline-flex; }
+  .navbar-toggle { display: none; }
+
+  .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
+  .hero-visual { order: 0; }
+  .hero-ctas { flex-direction: row; align-items: center; }
+  .hero-ctas .btn { width: auto; }
+
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .why-visual { order: 0; }
+
+  .features-grid { grid-template-columns: repeat(3, 1fr); }
+  .testimonials-track { grid-template-columns: repeat(3, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-top { grid-template-columns: 1.4fr repeat(3, 1fr); }
+
+  h1 { font-size: var(--fs-3xl); }
+  .section { padding-block: var(--space-4xl); }
+}
+
+/* ---- desktop (1280px+) ---- */
+@media (min-width: 1280px) {
+  :root { --container-width: 1200px; }
+}
+
+/* ---- large desktop (1440px+) ---- */
+@media (min-width: 1440px) {
+  :root { --container-width: 1280px; --container-padding: 2rem; }
+  .hero-title { font-size: 4.2rem; }
+}

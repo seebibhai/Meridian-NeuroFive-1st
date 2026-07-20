@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340" fill="none">
+  <rect x="0" y="0" width="500" height="340" rx="14" fill="#0E1420"/>
+  <text x="28" y="40" font-family="monospace" font-size="13" fill="#9AA7BD">incident_timeline.log</text>
+  <line x1="28" y1="60" x2="472" y2="60" stroke="#253044"/>
+
+  <circle cx="46" cy="96" r="5" fill="#35D399"/>
+  <line x1="46" y1="101" x2="46" y2="150" stroke="#253044" stroke-dasharray="3 3"/>
+  <text x="64" y="100" font-family="monospace" font-size="12" fill="#EEF1F6">09:14:02  auth-service healthy</text>
+
+  <circle cx="46" cy="150" r="5" fill="#FFB020"/>
+  <line x1="46" y1="155" x2="46" y2="204" stroke="#253044" stroke-dasharray="3 3"/>
+  <text x="64" y="154" font-family="monospace" font-size="12" fill="#FFB020">09:16:47  p99 latency spike detected</text>
+
+  <circle cx="46" cy="204" r="5" fill="#5B6EF5"/>
+  <line x1="46" y1="209" x2="46" y2="258" stroke="#253044" stroke-dasharray="3 3"/>
+  <text x="64" y="208" font-family="monospace" font-size="12" fill="#EEF1F6">09:16:51  on-call paged: S. Malik</text>
+
+  <circle cx="46" cy="258" r="5" fill="#35D399"/>
+  <text x="64" y="262" font-family="monospace" font-size="12" fill="#35D399">09:22:10  resolved · 5m 23s to ack</text>
+
+  <rect x="330" y="220" width="140" height="86" rx="10" fill="#121A26" stroke="#253044"/>
+  <text x="348" y="248" font-family="monospace" font-size="11" fill="#9AA7BD">MTTA</text>
+  <text x="348" y="274" font-family="monospace" font-size="20" fill="#5B6EF5">1m 40s</text>
+</svg>

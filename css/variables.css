@@ -1,0 +1,100 @@
+/* ==========================================================================
+   VARIABLES.CSS — Design System Tokens
+   Every color, size, and spacing value used across the site lives here.
+   Why: when the brand changes (a new accent color, a bigger type scale) we
+   edit one file instead of hunting through hundreds of CSS rules. It also
+   keeps every component visually consistent because they all pull from the
+   same palette instead of inventing their own one-off values.
+   ========================================================================== */
+
+:root {
+  /* ---- BRAND COLOR ----
+     Meridian is an API/infrastructure monitoring product, so the palette
+     is built around a "signal" metaphor rather than a generic SaaS blue:
+     an indigo brand color (trust, technical) + an amber pulse accent
+     (the color of a live status light) + a green/red status pair used only
+     for uptime states. Background is a deep teal-charcoal, not pure black,
+     so the UI reads as an instrument panel rather than a stock dark theme. */
+  --color-bg: #0b0f14;
+  --color-bg-alt: #0e1420;
+  --color-surface: #121a26;
+  --color-surface-2: #1a2433;
+  --color-border: #253044;
+  --color-border-strong: #364258;
+
+  --color-primary: #5b6ef5;      /* indigo — brand, primary CTAs, links */
+  --color-primary-dim: #3d4bb8;
+  --color-accent: #ffb020;       /* amber — the "pulse", highlights, badges */
+  --color-accent-dim: #cc8c19;
+
+  --color-signal-good: #35d399;  /* uptime / success status */
+  --color-signal-warn: #ffb020;  /* degraded status */
+  --color-signal-bad: #ff5c5c;   /* down / error status */
+
+  --color-text: #eef1f6;
+  --color-text-muted: #9aa7bd;
+  --color-text-faint: #616e85;
+
+  /* ---- TYPOGRAPHY ----
+     Space Grotesk: geometric + slightly technical, used for display
+     headings so the brand feels engineered rather than soft.
+     Inter: neutral, extremely legible at small sizes — body copy, UI text.
+     Space Mono: used only for metrics/data (latency, %, timestamps) to
+     visually mark "this is a live number" the way a terminal would. */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+
+  --fs-xs: 0.75rem;    /* 12px — captions, labels */
+  --fs-sm: 0.875rem;   /* 14px — small text, nav links */
+  --fs-base: 1rem;     /* 16px — body */
+  --fs-md: 1.125rem;   /* 18px — lead paragraphs */
+  --fs-lg: 1.5rem;     /* 24px — H3 */
+  --fs-xl: 2rem;       /* 32px — H2 */
+  --fs-2xl: 2.75rem;   /* 44px — H1 mobile */
+  --fs-3xl: 3.75rem;   /* 60px — H1 desktop */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* ---- SPACING SCALE ----
+     A consistent step scale (4px base) means every gap in the UI relates
+     to every other gap, so the page feels deliberately laid out rather
+     than eyeballed section by section. */
+  --space-2xs: 0.25rem;  /* 4px */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 0.75rem;   /* 12px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4.5rem;   /* 72px */
+  --space-4xl: 6rem;     /* 96px */
+
+  /* ---- SHAPE & DEPTH ---- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 0 1px rgba(91, 110, 245, 0.25), 0 0 40px rgba(91, 110, 245, 0.15);
+
+  /* ---- LAYOUT ---- */
+  --container-width: 1200px;
+  --container-padding: 1.5rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --header-height: 76px;
+}
