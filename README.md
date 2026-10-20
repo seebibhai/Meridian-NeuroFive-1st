@@ -17,7 +17,7 @@ engineers/SREs rather than generic "grow your business" SaaS language.
 The entire page is rendered by JavaScript component functions into a single
 `<div id="app">` in `index.html`. No section's HTML is hand-written and
 duplicated — every card (feature, pricing, testimonial, FAQ) is generated
-from a JS function reading structured data.
+from a JS function reading only structured data.
 
 ---
 
